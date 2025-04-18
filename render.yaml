@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: exchange_api
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        value: django-insecure-t!71*t*d_#@(fv11skv2wtsqp5w1jxz%ujg+4)p!m76)14sn42
+
+      - key: DEBUG
+        value: "False"
+
+      - key: POSTGRES_DB
+        value: exchangedb_1m4q
+
+      - key: POSTGRES_USER
+        value: aziret
+
+      - key: POSTGRES_PASSWORD
+        value: d2u4Yb778Sp1n5SCmNtwt49V8wCZCIbs
+
+      - key: DB_HOST
+        value: dpg-d013k4buibrs73evuj30-a.oregon-postgres.render.com
+
+      - key: DB_PORT
+        value: 5432
+
+      - key: ALLOWED_HOSTS
+        value: exchangebackend.onrender.com

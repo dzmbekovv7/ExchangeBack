@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waiting for Confirmation</title>
+    <link rel="stylesheet" href="{% static 'css/users/confirm.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Подтвердите ваш адрес электронной почты</h1>
+        <p>Пожалуйста, проверьте свою почту и введите код подтверждения ниже, чтобы активировать аккаунт.</p>
+
+        {% if errors %}
+            <div class="error">{{ errors|join:", " }}</div>
+        {% endif %}
+
+        <form method="POST" action="{% url 'confirm_email' %}">
+            {% csrf_token %}
+            <label for="confirmation_code">Код подтверждения:</label>
+            <input type="text" id="confirmation_code" name="confirmation_code" required>
+            <button type="submit">Подтвердить</button>
+        </form>
+    </div>
+</body>
+</html>
