@@ -14,16 +14,16 @@ services:
         value: "False"
 
       - key: POSTGRES_DB
-        value: exchangedb_1m4q
+        value: exchangedb_skkj
 
       - key: POSTGRES_USER
         value: aziret
 
       - key: POSTGRES_PASSWORD
-        value: d2u4Yb778Sp1n5SCmNtwt49V8wCZCIbs
+        value: ij6xA7LHlhoaPmRYuWaBqKOo452sa9xR
 
       - key: DB_HOST
-        value: dpg-d013k4buibrs73evuj30-a.oregon-postgres.render.com
+        value: dpg-d01j39re5dus73b8fs10-a.oregon-postgres.render.com
 
       - key: DB_PORT
         value: 5432
