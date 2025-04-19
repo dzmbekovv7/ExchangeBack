@@ -17,7 +17,7 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # Copy the rest of your app
-COPY ../exchange_api .
+COPY ../backend/exchange_api .
 
 # Command to run your app (example)
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
