@@ -14,19 +14,19 @@ services:
         value: "False"
 
       - key: POSTGRES_DB
-        value: exchangedb_pls0
+        value: exchangedb_1m4q
 
       - key: POSTGRES_USER
         value: aziret
 
       - key: POSTGRES_PASSWORD
-        value: WYU1y5IdmKlhoNqxv9eBI0rk7Sqikec1
+        value: d2u4Yb778Sp1n5SCmNtwt49V8wCZCIbs
 
       - key: DB_HOST
-        value: dpg-cvqlse6uk2gs73cjenrg-a.oregon-postgres.render.com
+        value: dpg-d013k4buibrs73evuj30-a.oregon-postgres.render.com
 
       - key: DB_PORT
         value: 5432
 
       - key: ALLOWED_HOSTS
-        value: exchangeback.onrender.com
+        value: exchangeback-sxhp.onrender.com
